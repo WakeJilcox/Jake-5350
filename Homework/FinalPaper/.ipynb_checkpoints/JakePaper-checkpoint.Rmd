@@ -1,0 +1,103 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ./svm-latex-ms.tex
+title: "What should students do?"
+author:
+- name: Jake Wilcox
+  affiliation: Utah State University
+abstract: "In this article ..."
+keywords: "Python, Monte Carlo, simulation, arbitrage"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+spacing: double
+bibliography: ./master.bib
+biblio-style: apsr
+---
+
+
+>  
+# Final Essay Proposal
+
+1.) 
+* Outline what Buchanan's main point is.
+Buchanan's main point is that economists tend to lose sight of their subject matter. Economics has become so mathematized Buchanan argues that economists are becoming becoming mechanical applied mathematicians. He argues that this has diluted what economics studies, which is how the individual behaviors of an economy move together to create a group effect. 
+
+* What does Buchanan mean by the word catallatics?
+
+Buchanan refers to it as symbiotics which is the study of the association between dissimilar organisms, noting that the association is mutually beneficial. In an economic sense, this is cooperative association of individuals, even when the individual interests are different. 
+
+* According to Buchanan what do most economists do?
+
+Most economists get caught up in the calculations that has made economics too mechanical, which is turning economists into applied mathematicians. He also thinks that economists have been so concerned with defining economics that it has been taking away from progress.
+
+* What does he think they should do differently?
+
+He thinks that economists should know their subject matter. He references (ITALICIZE)Wealth of Nations, which says that humans have a propensity to truck, barter, and exchange. He wants economists to take this theory and apply it to their subject matter and "pay attention on a particular form of human activity, and upon the various institutional arrangements that arise as a result of this activity." He draws this point back to the idea of markets and how its individual behaviors that create the market. 
+
+2.)
+
+* What should quantitative students do?
+    
+    
+4.) Write your proposal:
+
+* Abstract
+    While reading Buchanan's paper, I kept thinking of Peter Kennedy's paper, Teaching Undergraduate Econometrics: A Suggestion for Fundamental Change, and that's because I feel like Buchanan and Kennedy are arguing the same thing. In my studies, I've gone the hard route that Kennedy and Buchanan outline and I want to write an essay about what students should do and outline how they should focus on the underlying concepts rather than plugging numbers into a formula. 
+
+
+* Brief Literature Review
+    ** Teaching Undergraduate Econometrics: A Suggestion for Fundamental Change
+        This source is a paper written towards professors in academia suggesting change in the way courses are taught. Kennedy argues that students are lacking a fundamental knowledge of statistics that leaves them unprepared to understand econometrics. Rather than teaching concepts, classrooms are teaching unrelated ideas that must be memorized and therefore students don't have the full understanding of the subject matter that is expected of them. 
+
+    ** Effects of Contextualized Math Instruction on Problem Solving of Average and Below Average Achieving Students
+        This source talks about how students don't have the fundamental math skills to solve problems required in the workplace. This paper argues that this is because students are taught that mathematics is simply rules to be memorized that create algorithms. Removing the conceptualization of math is why students have deficient math skills. 
+        
+    ** The Effects of Problem-Based Learning Instruction on University Students' Performance of Conceptual and Quantitative Problems in Gas Concepts.
+        This article discusses a study that was done about the effectiveness of conceptual learning when it comes to gases with chemistry. Although this paper is centered around chemistry, it is still applicable when it comes to other academci disciplines. It highlights that it is harder for students to gain conceptual understanding of a topic, but students develop stronger problem solving skills when they have to conceptualize information. Part of the problem comes from the way students are taught and tested which leads to emphasis on memorization of formulas. 
+
+* Bullet Point Outline
+
+- The problem with how things are taught and how it sets students up to fail.
+- The problem with student's perspectives of learning material
+- The responsibility students have in their own education
+- The power of conceptualizing information rather than memorizing
+- Why conceptualizing is so much harder than memorizing 
+- What might change the paradigm of education
+
+
+# Introduction
+
+
+
+## Subsection 1
+
+Blah blah blah
+
+## Subsection 2 
+
+Yada yada yada. @Figlewski1989 is about simulating option market maker delta-hedging under conditions of friction, transactions costs, etc. 
+
+# Middle Section
+
+More words about computation in finance and economics
+
+# Summary and Conclusion
+
+Summary of paper. More stuff!
+
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->
+
