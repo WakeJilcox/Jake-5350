@@ -1,0 +1,388 @@
+\documentclass[11pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+\title{What should students do?  }
+
+
+
+\author{\Large Jake Wilcox\vspace{0.05in} \newline\normalsize\emph{Utah State University}  }
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+\usepackage{natbib}
+\bibliographystyle{apsr}
+
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+}
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Jake Wilcox (Utah State University)},
+             pdfkeywords = {Python, Monte Carlo, simulation, arbitrage},  
+            pdftitle={What should students do?},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%
+% \maketitle
+
+{% \usefont{T1}{pnc}{m}{n}
+\setlength{\parindent}{0pt}
+\thispagestyle{plain}
+{\fontsize{18}{20}\selectfont\raggedright 
+\maketitle  % title \par  
+
+}
+
+{
+   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+\textbf{\authorfont Jake Wilcox} \hskip 15pt \emph{\small Utah State University}   
+
+}
+
+}
+
+
+
+
+
+
+
+\begin{abstract}
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+    \vskip 8.5pt % \small 
+
+\noindent In this article \ldots{}
+
+
+\vskip 8.5pt \noindent \emph{Keywords}: Python, Monte Carlo, simulation, arbitrage \par
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+
+
+\end{abstract}
+
+
+\vskip 6.5pt
+
+\noindent \doublespacing \begin{quote}
+\end{quote}
+
+\begin{verbatim}
+The problem with modern-day education is failing to conceptualize the information taught in various subjects. Conceptualizing information is being able to qualitatively understand a topic. This issue is most apparent in STEM courses. The most successful students can understand both the qualitative and quantitative parts of their courses, but the education system and student’s perspectives have put emphasis strictly on the quantitative part. This paper could be addressed to students in general, but quantitative students specifically are the ones with the most improvement and are the ones this is written for. 
+\end{verbatim}
+
+Using complicated formulas and algorithms taught in STEM courses can be
+incredibly difficult. It is even harder to conceptually understand why
+they work which is why the qualitative aspect of STEM courses is often
+ignored and students memorize formulas to get through school. This
+leaves them unprepared for more difficult problems in future classes and
+real-world applications. Quantitative students should work towards
+conceptually understanding their material to be successful students and
+industry professionals.
+
+Failing to conceptualize information creates issues for students to
+transfer learning objectives to advanced and other subjects which makes
+it even harder to learn new material. This leads to a rabbit-hole of
+students trying to catch up to do well on the current subject and
+incentivizes students to memorize topics for an exam only to forget
+later. Students should change this by taking more responsibility for
+their learning and work towards conceptualizing information.
+
+If students truly want to learn something, they need to stray away from
+memorizing formulas and algorithms and understand why things work. So,
+if students can conceptualize what they're learning they won't have to
+memorize it and the information will stick with them. This is important
+because understanding a concept allows students to apply similar
+concepts across multiple subjects. Lacking this skill has left students
+``woefully inadequate'' for problem-solving in the workplace
+\citet{bottge1999}. Conceptualizing quantitative subjects is critical to
+work in and outside of the classroom and students should work towards
+changing this.
+
+As Richard Hamming said, ``The purpose of computing is insight, not
+numbers.'' However, students tend to neglect this and focus on numbers.
+This inherently means students aren't learning anything. You can teach a
+third grader how to plug numbers into a formula and they wouldn't need
+to know what's going on. That's because the insight behind the formula
+is missing, and the third grader isn't learning anything. Students
+shouldn't forget this and look towards understanding the insights behind
+the numbers.
+
+This type of learning is much more difficult than I've made it sound
+which is why students will ignore putting in the effort. It could take
+10 minutes to memorize a formula for an exam, but it could take up to 10
+hours to understand what's going on in the formula. Even at the
+sacrifice of their education, it's not a surprise why students would
+take this route. Although students need to be held accountable for the
+success of their education, part of the blame can be put on the
+education system. Emphasis on grades and test scores is what
+incentivizes students to study like this.
+
+Students have gone through years where their intellect has been measured
+by their grades and their tests, so it makes perfect sense why students
+are taking the easy way out. Although tests and grades are the best way
+to measure student's learning, it's inadvertently showed students that
+learning is about memorizing facts and formulas for exams. By the time
+students make it to college, they are expected to be self-learners and
+take charge of their education. However, years of being conditioned to
+learn through memorizing leaves them vastly unprepared for college's
+academic rigor.
+
+The most effective way teachers can facilitate the conceptualization
+process is with problem-based learning. Students have the tendency to
+memorize formulas rather than understanding the conceptual knowledge
+behind the topic \citet{bilgin2009}. Constructing real situations
+containing the desired learning objectives in lessons will help students
+avoid this process. However, this is too unrealistic to see every
+teacher adopting this approach to their lessons which is why students
+need to do this themselves. With access to the internet it should be
+easy for students to research applications of the subject material.
+Rather than blame the education system or the teacher students should
+work harder to find the supplemental material they need.
+
+Problem-based learning goes together with the constructivism pedagogy
+theory. Constructivism is where students bring their own ideas and
+background into the classroom and need to make connections within their
+own framework \citet{kennedy1998}. Quantitative courses are often taught
+as facts to be memorized which destroys constructivist and problem-based
+learning which is why so many students believe they are incapable of
+understanding quantitative subjects.
+
+It is difficult for a teacher to create a lesson that helps a group of
+diverse learners conceptualize information. Compared to individual
+instruction, teachers cannot use personalized examples to help students
+connect new material to frameworks they understand. This has led to
+multiple pedagogy problems across many subjects and grade levels.
+However, the responsibility isn't strictly on the instructors. Students
+need to make the paradigm shift and work towards preventing this issue
+themselves by taking responsibility for their own learning and working
+towards making connections themselves. This is the hardest with younger
+students that haven't figured out how to become self-learners yet.
+
+The journey of learning tends to be perceived as teachers filling
+students' empty brains with the knowledge they don't possess. Instead,
+teachers should be more of guides that facilitate the learning process
+for students \citet{bilgin2009}. People learn the most when they are
+making and learning from their own mistakes which is why the ``know-all,
+wise professor'' approach sets students up to fail. Teachers should be
+more of guides that facilitate the learning process that helps students
+conceptualize the information themselves.
+
+I saw the power of this first-hand in the second semester of my
+undergraduate degree. My economics professor limited the mathematics in
+the class to discourage students from using the formulas as a crutch to
+not understanding the key concepts. At this point, my professor had done
+an excellent job of teaching the material and now it was the student's
+responsibility to connect the topics to their own framework. The
+professor instructed in a way that facilitated the learning process
+among all students, but it was up to the student to make up for their
+lack of understanding.
+
+The dissonance between students and teachers also causes problems. This
+dissonance is best demonstrated by an example from one of my
+undergraduate finance classes. In this class, the professor told his
+students that he wanted them to understand the concepts rather than
+memorizing formulas. A student then asked, ``If you don't want us to
+memorize formulas, then can we have a formula sheet?'' The professor
+approved his request and included a formula sheet in the exam. In this
+example, the students wanted a formula sheet, so they could avoid
+spending the time to understand the key concepts while the professor
+assumed that the formula sheet would only be supplemental since the
+students are working towards understanding the concepts. This dissonance
+continues in other subjects and only further encourages students to
+avoid conceptually learning. Successful students are the ones that are
+aware of this dissonance and focus their learning on the teacher's
+learning objectives.
+
+This process continues in class-to-class and students start to view
+lessons as a topic to memorize rather than conceptually understand. This
+leads to students lacking the prerequisite skills required for advanced
+classes. Instructors expect their students to have prerequisite
+knowledge even though students tend to memorize and forget
+\citet{kennedy1998}. In one of my undergraduate calculus classes, I
+struggled immensely with understanding Taylor series. I spent weeks
+reading and watching YouTube videos to understand why they work when
+most students just used the formulas for the exams. A couple semesters
+later, Taylor series appeared in my linear algebra course and the work I
+spent conceptualizing the topic paid off. While some students panicked,
+I was ready for new application of Taylor series because I understood
+the key concepts. Students should take this approach in their
+quantitative courses to truly learn because conceptual learning lasts
+while memorizing does not.
+
+The education system is imperfect. It's unrealistic to expect drastic
+fixes to the education system which is why students should take control
+of their own learning. However, this is the hardest part of learning and
+students avoid this like the plague. Students would rather cram and
+memorize information for a grade rather than spend the extra time
+learning the concepts behind the formulas and algorithms. Students that
+take the latter will be more prepared to apply the learning objectives
+across multiple subjects and real-world problems. Understanding why
+things are more difficult than memorizing but is much harder to forget.
+
+Students should want to learn by understanding. Going into education
+with the objective of understanding brings much more value to the
+student debt that comes with a degree. Working in the field is as simple
+as applying the subjects learned in school to unique problems. The
+problems students will do in the classroom are incredibly easy compared
+to real-world problems. Students that skip the learning process will be
+critically unprepared when it comes to problems that would be seen in
+their career.
+
+When students skip truly learning something, they inhibit their ability
+to recognize common patterns in problems and prevents students from
+recognizing from applying the subject to other problems
+\citet{bottge1999}. Instructors believe students have completed and
+understood the introductory topics for their class and are frustrated
+when they need to spend valuable class time reteaching introductory
+topics, so students can understand the new material \citet{kennedy1998}.
+This problem creates a cycle of students being unprepared from
+class-to-class and becoming dependent on their instructors reteaching
+previous classes. Students that avoid this will have the upper hand and
+succeed in future classes.
+
+Understanding the underlying concepts behind quantitative courses is
+critical. Economics, biology, computer science, and other STEM courses
+aren't using a different type of math. If students can't recognize
+common patterns in problems, topics they've previously learned will feel
+completely foreign to them leaving them unprepared for applications
+across multiple subjects. I've seen this first hand in my economics
+classes where students struggled with marginal analysis because they
+didn't fully understand how derivatives worked in their math classes.
+The professor had to take the time to teach students something they
+should have already been prepared for. This isn't unique to economics,
+it is a common problem across all subjects. Students that take the easy
+way out of learning will cripple them in future classes and work.
+
+To be successful in the field and classroom you need to have both
+qualitative and quantitative understanding. Professionals without a
+strong qualitative understanding of their disciplines are essentially
+applied mathematicians (Buchannan 216). On the flip side, mathematicians
+that cannot apply their knowledge are essentially a walking formula
+sheet. Students need to understand their subject matter both
+quantitatively and qualitatively or else they will be missing half of
+the equation. I've been arguing that students need to conceptualize
+quantitative information because it is neglected, not because it is more
+important than knowing how to use complicated formulas.
+
+With all the benefits coming from this type of learning, you would think
+more students would learn this way. This is because students either lack
+interest or grit. It is hard for students to grind through challenging
+work if they're not interested in the subject matter. If it's too hard
+for students to persevere through the learning they should reflect
+intrinsically to see if they should study something more interesting to
+them. Otherwise, when students are challenged, they will be more likely
+to give up.
+
+Students should work through this dilemma by working towards being
+grittier in their work. Ironically, the most successful students aren't
+always the ones with the highest IQs. The most successful students are
+ones that take their learning into their own hands and persevere until
+they understand. Incorporating grit into students learning objectives
+earlier in their academics will help students take learning into their
+own hands and will be a great start to solving the education system's
+problems. The more students that challenge themselves the more students
+will maximize their learning potential.
+
+The education system is imperfect and can set students up to fail.
+Rather than blame the education system for academic struggles students
+need to make a paradigm shift of taking responsibility for their own
+education. This starts by changing the way subjects are taught, teaching
+students grit early-on, and encouraging students to take responsibility
+for their own education. The most important part is having students take
+responsibility for their own education because there isn't a simple
+educational reform that will solve their problems.
+
+Students need to work harder in conceptually understanding their
+subjects and challenging themselves. Too many students fail to do this
+and struggle with future classes and being ill-prepared for problems
+they will face in the workforce. Students should see these issues and
+make the change themselves. Students that do this will be the ones that
+are ready to innovate and implement change to make the world a better
+place for future generations.
+
+\newpage
+\singlespacing 
+\bibliography{./master.bib}
+
+\end{document}
